@@ -7,10 +7,14 @@
 }
 
 table {
-    background-color: rgba(0, 0, 16, 0.129);
+    background-color: #0faa953b;
     padding: 80px 30px 30px 30px;
     width: 100px;
     border-radius: 10px;
+}
+
+table th {
+    border-bottom: 1px solid #00756589;
 }
 
 table th input {
@@ -19,16 +23,27 @@ table th input {
 }
 
 table td input {
-    margin: 2px;
+    margin: 3px;
     width: 37px;
     height: 30px;
     text-align: center;
     color: white;
-    background-color: rgb(2, 0, 33);
+    background-color: #0faa96;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+table td input:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .eq input {
     width: 83px;
+}
+
+.op {
+    color: #b4fff5;
 }
