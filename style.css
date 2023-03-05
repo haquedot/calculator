@@ -2,8 +2,13 @@
     background-color: brown;
 } */
 
+.logo img {
+    margin: 20px 0 0 0;
+    width: 200px;
+}
+
 .cal {
-    margin: 150px 0 0 0;
+    margin: 70px 0 0 0;
 }
 
 table {
@@ -40,10 +45,16 @@ table td input:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.eq input {
+.ze input {
     width: 83px;
 }
 
 .op {
-    color: #b4fff5;
+    background-color: #000462;
+    transition: transform .2s;
+}
+
+.op:hover {
+    transform: scale(1.1);
+    box-shadow: #ffffff43 0px 50px 100px -20px, #ffffff43 0px 30px 60px -30px, #ffffff43 0px -2px 6px 0px inset;
 }
