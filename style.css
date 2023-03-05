@@ -1,0 +1,34 @@
+/* .container {
+    background-color: brown;
+} */
+
+.cal {
+    margin: 150px 0 0 0;
+}
+
+table {
+    background-color: rgba(0, 0, 16, 0.129);
+    padding: 80px 30px 30px 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+table th input {
+    border: none;
+    background-color: transparent;
+}
+
+table td input {
+    margin: 2px;
+    width: 37px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(2, 0, 33);
+    border: none;
+    border-radius: 5px;
+}
+
+.eq input {
+    width: 83px;
+}
