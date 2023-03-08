@@ -14,83 +14,83 @@
         <img src="logo.jpg" alt="logo">
     </div>
     <div class="container" align="center">
-        <div class="cal">
+        <form class="cal" name="cal">
             <table>
                 <tr>
                     <th colspan="4">
-                        <input type="text">
+                        <input type="text" id="out" disabled>
                     </th>
 
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="AC" class="op">
+                        <input type="button" value="AC" class="op" onclick="cal.out.value = ''">
                     </td>
                     <td>
-                        <input type="button" value="DE" class="op">
+                        <input type="button" value="DE" class="op" onclick="deleteE()">
                     </td>
                     <td>
-                        <input type="button" value="AC" class="op">
+                        <input type="button" value="%" class="op" onclick="cal.out.value += '%'">
                     </td>
                     <td>
-                        <input type="button" value="/" class="op">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" value="7">
-                    </td>
-                    <td>
-                        <input type="button" value="9">
-                    </td>
-                    <td>
-                        <input type="button" value="4">
-                    </td>
-                    <td>
-                        <input type="button" value="*" class="op">
+                        <input type="button" value="/" class="op" onclick="cal.out.value += '/'">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="4">
+                        <input type="button" value="7" onclick="cal.out.value += '7'">
                     </td>
                     <td>
-                        <input type="button" value="5">
+                        <input type="button" value="9" onclick="cal.out.value += '9'">
                     </td>
                     <td>
-                        <input type="button" value="6">
+                        <input type="button" value="4" onclick="cal.out.value += '4'">
                     </td>
                     <td>
-                        <input type="button" value="-" class="op">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" value="1">
-                    </td>
-                    <td>
-                        <input type="button" value="2">
-                    </td>
-                    <td>
-                        <input type="button" value="3">
-                    </td>
-                    <td>
-                        <input type="button" value="+" class="op">
+                        <input type="button" value="*" class="op" onclick="cal.out.value += '*'">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value=".">
+                        <input type="button" value="8" onclick="cal.out.value += '8'">
+                    </td>
+                    <td>
+                        <input type="button" value="5" onclick="cal.out.value += '5'">
+                    </td>
+                    <td>
+                        <input type="button" value="6" onclick="cal.out.value += '6'">
+                    </td>
+                    <td>
+                        <input type="button" value="-" class="op" onclick="cal.out.value += '-'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="1" onclick="cal.out.value += '1'">
+                    </td>
+                    <td>
+                        <input type="button" value="2" onclick="cal.out.value += '2'">
+                    </td>
+                    <td>
+                        <input type="button" value="3" onclick="cal.out.value += '3'">
+                    </td>
+                    <td>
+                        <input type="button" value="+" class="op" onclick="cal.out.value += '+'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="." onclick="cal.out.value += '.'">
                     </td>
                     <td colspan="2" class="ze">
-                        <input type="button" value="0">
+                        <input type="button" value="0" onclick="cal.out.value += '0'">
                     </td>
                     <td>
-                        <input type="button" value="=" class="op">
+                        <input type="button" value="=" class="op" onclick="cal.out.value = eval(cal.out.value)">
                     </td>
                 </tr>
             </table>
-        </div>
+        </form>
     </div>
 </body>
 

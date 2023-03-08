@@ -4,11 +4,11 @@
 
 .logo img {
     margin: 20px 0 0 0;
-    width: 200px;
+    width: 150px;
 }
 
 .cal {
-    margin: 70px 0 0 0;
+    margin: 50px 0 0 0;
 }
 
 table {
@@ -25,6 +25,9 @@ table th {
 table th input {
     border: none;
     background-color: transparent;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000462;
 }
 
 table td input {
