@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="icon" type="image/x-icon" href="C.jpg">
     <link rel="stylesheet" href="style.css">
+    <link href="script.js">
 </head>
 
 <body>
@@ -27,7 +29,7 @@
                         <input type="button" value="AC" class="op" onclick="cal.out.value = ''">
                     </td>
                     <td>
-                        <input type="button" value="DE" class="op" onclick="cal.out.value = --cal.out.value">
+                        <input type="button" value="DE" class="op" onclick="cal.out.value = cal.out.value.slice(0,cal.out.value.length-1)">
                     </td>
                     <td>
                         <input type="button" value="%" class="op" onclick="cal.out.value += '%'">
